@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+		  <groupId>de.ffeppendorfbot</groupId>
+		  <artifactId>ffeppendorfbot</artifactId>
+  <build>
+    <plugins>
+      <plugin>
+                <!-- Building an executable jar -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                  <archive>
+                    <manifest>
+                    <!-- give full qualified name of your main class-->
+                      <mainClass>ffeppdeinsatzbotv2.MainClass</mainClass>
+
+                    </manifest>
+                  </archive>
+                </configuration>
+      </plugin>
+        <plugin>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <configuration>
+        <archive>
+          <manifest>
+            <mainClass>ffeppdeinsatzbotv2.MainClass</mainClass>
+          </manifest>
+        </archive>
+        <descriptorRefs>
+          <descriptorRef>jar-with-dependencies</descriptorRef>
+        </descriptorRefs>
+      </configuration>
+    </plugin>
+    </plugins>
+  </build>
+  <version>0.0.1-SNAPSHOT</version>
+  
+<properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+   <dependencies>
+  <dependency>
+  	<groupId>org.telegram</groupId>
+  	<artifactId>telegrambots</artifactId>
+  	<version>4.9.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.slf4j</groupId>
+  		<artifactId>slf4j-api</artifactId>
+  		<version>1.7.5</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.slf4j</groupId>
+  		<artifactId>slf4j-simple</artifactId>
+  		<version>1.6.4</version>
+  	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
+<dependency>
+    <groupId>org.xerial</groupId>
+    <artifactId>sqlite-jdbc</artifactId>
+    <version>3.36.0.2</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
+<dependency>
+    <groupId>org.mariadb.jdbc</groupId>
+    <artifactId>mariadb-java-client</artifactId>
+    <version>2.7.4</version>
+</dependency>
+
+
+
+
+  	
+  </dependencies>
+</project>
