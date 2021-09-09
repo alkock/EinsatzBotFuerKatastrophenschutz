@@ -1,2 +1,3 @@
 # EinsatzBotFuerKatastrophenschutz
-Dies ist ein Abfragetool für Katastrophenschutzeinheiten, um die Einsatzbereitschaft im Alarmfall abzufragen.
+
+Dieser Bot wurde geschrieben, damit Einsatzkräfte eine Katastrophenschutzeinheit einen Überblick bekommen können auf welche Kräfteressourcen sie zurückgreifen können um so ggfs. weitere Kräfte zu disponieren.
