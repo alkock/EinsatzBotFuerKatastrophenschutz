@@ -35,7 +35,6 @@
     </plugins>
   </build>
   <version>0.0.1-SNAPSHOT</version>
-  
 <properties>
      <maven.compiler.source>1.8</maven.compiler.source>
      <maven.compiler.target>1.8</maven.compiler.target>
@@ -51,29 +50,23 @@
   		<artifactId>slf4j-api</artifactId>
   		<version>1.7.5</version>
   	</dependency>
-  	<dependency>
+ 	<dependency>
   		<groupId>org.slf4j</groupId>
   		<artifactId>slf4j-simple</artifactId>
   		<version>1.6.4</version>
   	</dependency>
 	<!-- https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc -->
-<dependency>
-    <groupId>org.xerial</groupId>
-    <artifactId>sqlite-jdbc</artifactId>
-    <version>3.36.0.2</version>
-</dependency>
+	<dependency>
+ 	 	<groupId>org.xerial</groupId>
+    		<artifactId>sqlite-jdbc</artifactId>
+    		<version>3.36.0.2</version>
+	</dependency>
 
-
-<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
-<dependency>
-    <groupId>org.mariadb.jdbc</groupId>
-    <artifactId>mariadb-java-client</artifactId>
-    <version>2.7.4</version>
-</dependency>
-
-
-
-
-  	
+	<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
+	<dependency>
+   	        <groupId>org.mariadb.jdbc</groupId>
+   	        <artifactId>mariadb-java-client</artifactId>
+		<version>2.7.4</version>
+	</dependency>
   </dependencies>
 </project>
