@@ -9,8 +9,6 @@ import Personen.Einsatzkraft;
 import Personen.EinsatzkraftImpl;
 
 public class Initialisierer {
-
-	
 		public static Map<Long, Einsatzkraft> ladeEinsatzkraefte()
 			{
 				Map<Long, Einsatzkraft> nutzerSet = new HashMap<Long, Einsatzkraft>();			
@@ -39,10 +37,7 @@ public class Initialisierer {
 				catch(Exception e)
 				{
 					e.printStackTrace();
-				}
-				
-					
-					
+				}	
 				return nutzerSet;
 			}
 		
@@ -51,9 +46,6 @@ public class Initialisierer {
 			{
 				return null;
 			}
-		
-		
-		
 		public static void speichere(Einsatzkraft einsatzkraft)
 			{
 
